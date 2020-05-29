@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Gulp</title>
+</head>
+
+<body>
+
+	<div id="root">
+		<div class="wrapper">
+
+			<div class="form__wrapper">
+
+				<div class="form__logo-block">
+					@@include('_logo.html')
+				</div>
+
+				<form class="form__body">
+
+					<h2 class="form__title">API-консолька</h2>
+
+					@@include('_error-block.html')
+
+					<label for="login-input" class="form__input-label error">Логин</label>
+					<input type="text" id="login-input" class="form__input error" placeholder="Введите логин"
+						value="iamyourlogin@domain.xyz">
+
+					<div class="form__sublogin-label-wrapper">
+						<label for="sublogin-input" class="form__input-label">Сублогин</label>
+						<small class="form__optional-text">Опционально</small>
+					</div>
+
+					<input type="text" id="sublogin-input" class="form__input" placeholder="Введите Сублогин"
+						value="sublogin-could-be-here">
+
+					<label for="password-input" class="form__input-label">Пароль</label>
+					<input type="password" id="password-input" class="form__input" placeholder="Введите пароль" value="sublogin">
+
+
+					@@include('_btn.html')
+
+
+
+				</form>
+
+				@@include('_github-link-block.html')
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>

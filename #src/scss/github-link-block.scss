@@ -1,0 +1,45 @@
+.github-link-block {
+	text-align: center;
+}
+
+.github-link-block__link {
+	color: #999;
+	position: relative;
+
+	&:hover {
+		color: #999;
+	}
+
+	&:hover .github-link-block__pop-up {
+		display: block;
+	}
+}
+
+.github-link-block__pop-up {
+	display: none;
+	transition: 0.5s;
+	position: absolute;
+	top: 0;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 10px;
+	white-space: nowrap;
+	border-radius: 5px;
+	font-size: 15px;
+	min-width: 100px;
+	left: 50%;
+	transform: translate(-50%, -120%);
+
+	& .triangle {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 10px 0 10px;
+		border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 10px);
+	}
+}

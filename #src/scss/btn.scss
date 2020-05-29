@@ -1,0 +1,27 @@
+.btn {
+	font-size: 16px;
+	width: 110px;
+	height: 40px;
+	border-radius: 5px;
+	background-image: linear-gradient(#3d9cfe, #075dfb);
+	color: #fff;
+	box-sizing: border-box;
+
+	&:focus {
+		border: 2px solid lightblue;
+	}
+
+	&:hover {
+		background-image: linear-gradient(#5dafff, #2a73fc);
+	}
+
+	&:active {
+		background-image: linear-gradient(#3687d9, #054fd5);
+		border: none;
+	}
+
+	&:disabled {
+		background: #c4c4c4;
+		cursor: not-allowed;
+	}
+}

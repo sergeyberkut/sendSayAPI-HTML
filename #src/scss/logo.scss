@@ -1,0 +1,32 @@
+.logo {
+	height: 100%;
+	display: inline-block;
+	user-select: none;
+}
+
+.logo__circle {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background: #000;
+}
+
+.logo__figure {
+	background: #c6c6c6;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin-right: 2px;
+
+	&--circle {
+		border-radius: 50px;
+	}
+
+	&--rectangle {
+		width: 15px;
+	}
+
+	&--skew {
+		transform: skew(-25deg);
+	}
+}

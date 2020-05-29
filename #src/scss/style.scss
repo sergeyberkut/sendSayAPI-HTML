@@ -1,0 +1,90 @@
+@import "fonts";
+@import "null";
+@import "btn";
+
+@import "logo";
+
+@import "error-block";
+
+@import "spinner";
+
+@import "github-link-block";
+
+@import "console-styles";
+
+
+.wrapper {
+	height: 100%;
+	min-height: 100vh;
+	background: #f7f7f7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form__wrapper {
+	width: 520px;
+	margin: 30px 0;
+}
+
+.form__logo-block {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.form__body {
+	background: #ffffff;
+	margin: 15px 0;
+	padding: 40px 30px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	color: #0d0d0d;
+	display: flex;
+	flex-direction: column;
+}
+
+.form__title {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.form__input-label {
+	&.error {
+		color: red;
+	}
+}
+
+.form__input {
+	border: 1px solid #c6c6c6;
+	border-radius: 5px;
+	margin: 8px 0 20px;
+	padding: 5px;
+	font-size: 18px;
+
+	&:hover {
+		border: 1px solid #000;
+	}
+
+	&:focus {
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+		border: 1px solid #000;
+	}
+
+	&.error {
+		border: 1px solid red;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+	}
+}
+
+.form__sublogin-label-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form__optional-text {
+	font-size: 12px;
+	color: #999;
+}
